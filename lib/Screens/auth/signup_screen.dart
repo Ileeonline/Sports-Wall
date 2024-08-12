@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -46,30 +47,35 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       height: 8.h,
                     ),
                     MyTextField(
+                      prefixIcon: const Icon(CupertinoIcons.person),
                       labelTxt: "Enter your username",
                       obscureText: false,
                       keyboardType: TextInputType.emailAddress,
                     ),
                     SizedBox(height: 4.h),
                     MyTextField(
+                      prefixIcon: const Icon(CupertinoIcons.mail),
                       labelTxt: "Enter your Email",
                       obscureText: true,
                       keyboardType: TextInputType.visiblePassword,
                     ),
                     SizedBox(height: 4.h),
                     MyTextField(
+                      prefixIcon: const Icon(CupertinoIcons.person),
                       labelTxt: 'Enter your full name',
                       obscureText: false,
                       keyboardType: TextInputType.name,
                     ),
                     SizedBox(height: 4.h),
                     MyTextField(
+                      prefixIcon: const Icon(CupertinoIcons.padlock_solid),
                       labelTxt: 'Enter your password',
                       obscureText: true,
                       keyboardType: TextInputType.visiblePassword,
                     ),
                     SizedBox(height: 4.h),
                     MyTextField(
+                      prefixIcon: const Icon(CupertinoIcons.padlock_solid),
                       labelTxt: 'Confirm your password',
                       obscureText: true,
                       keyboardType: TextInputType.visiblePassword,

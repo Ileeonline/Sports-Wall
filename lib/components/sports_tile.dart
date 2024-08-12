@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
-import 'package:sports_news/components/league_tile.dart';
-import 'package:sports_news/models/league.dart';
 import 'package:sports_news/models/sports.dart';
 
 class SportsTile extends StatefulWidget {
@@ -61,9 +59,6 @@ class _SportsTileState extends State<SportsTile> {
                     fontSize: 12.sp,
                     color: Theme.of(context).colorScheme.tertiary,
                   ),
-                ),
-                LeagueTile(
-                  sportsLeague: ,
                 ),
               ],
             ),

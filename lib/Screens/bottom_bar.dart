@@ -1,10 +1,11 @@
 // ignore_for_file: unused_field
 
 import 'package:flutter/material.dart';
-import 'package:sports_news/Screens/account_screen.dart';
 import 'package:sports_news/Screens/home_screen.dart';
 import 'package:sports_news/Screens/livescore_screen.dart';
 import 'package:sports_news/Screens/sportnews_screen.dart';
+
+import 'account_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});

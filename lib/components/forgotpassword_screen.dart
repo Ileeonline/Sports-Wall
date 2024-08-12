@@ -39,6 +39,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               ),
               SizedBox(height: 4.h),
               MyTextField(
+                prefixIcon: const Icon(Icons.email),
                 labelTxt: "Enter your email",
                 obscureText: false,
                 keyboardType: TextInputType.emailAddress,

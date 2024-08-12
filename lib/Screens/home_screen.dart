@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Padding(
         padding: EdgeInsets.only(top: 8.h, left: 6.w, right: 6.w),
         child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -24,27 +25,22 @@ class NewPasswordScreen extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                'Forgot your password?',
+                'Enter your new password',
                 style: GoogleFonts.bebasNeue(
                     fontSize: 24.sp,
                     color: Theme.of(context).colorScheme.tertiary),
               ),
               SizedBox(height: 2.h),
-              Text(
-                'Enter your email address to recover',
-                style: GoogleFonts.bebasNeue(
-                  fontSize: 12.sp,
-                  color: Colors.grey,
-                ),
-              ),
               SizedBox(height: 4.h),
               MyTextField(
+                prefixIcon: const Icon(CupertinoIcons.padlock_solid),
                 labelTxt: "Enter your password",
                 obscureText: false,
                 keyboardType: TextInputType.emailAddress,
               ),
               SizedBox(height: 4.h),
               MyTextField(
+                prefixIcon: const Icon(CupertinoIcons.padlock_solid),
                 labelTxt: "Confirm your password",
                 obscureText: false,
                 keyboardType: TextInputType.emailAddress,
